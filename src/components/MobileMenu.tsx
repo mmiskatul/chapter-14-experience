@@ -56,9 +56,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 onClick={onClose}
                 className="flex items-baseline gap-4 py-4 font-[family-name:var(--font-display)] text-3xl text-light-text transition-colors hover:text-accent"
               >
-                <span className="eyebrow text-[0.6rem] text-accent/70">
-                  0{index + 1}
-                </span>
+                <span className="eyebrow text-[0.6rem] text-accent/70">0{index + 1}</span>
                 {link.label}
               </Link>
             </li>

@@ -76,7 +76,12 @@ export const menuCategories: MenuCategory[] = [
   { id: "kebab", label: "Kebab", blurb: "Grilled to perfection.", image: kebab },
   { id: "curry", label: "Curry", blurb: "Slow-built, deep flavor.", image: butterMasala },
   { id: "rice", label: "Rice", blurb: "Perfectly satisfying.", image: friedRice },
-  { id: "set-menu", label: "Set Menu", blurb: "Complete meals for every occasion.", image: setMenu },
+  {
+    id: "set-menu",
+    label: "Set Menu",
+    blurb: "Complete meals for every occasion.",
+    image: setMenu,
+  },
   { id: "package", label: "Package", blurb: "Made for groups.", image: momo },
 ];
 
@@ -291,7 +296,8 @@ export const menuItems: MenuItem[] = [
     id: "special-fried-rice",
     name: "Special Fried Rice",
     category: "rice",
-    description: "Wok-tossed rice with chicken, egg, prawn and vegetables in a light soy seasoning.",
+    description:
+      "Wok-tossed rice with chicken, egg, prawn and vegetables in a light soy seasoning.",
     price: 320,
     image: friedRice,
     popular: true,
@@ -352,7 +358,8 @@ export const menuItems: MenuItem[] = [
     id: "chicken-burger",
     name: "Chapter Chicken Burger",
     category: "burger",
-    description: "Crispy chicken fillet, cheese and house sauce in a toasted brioche bun with fries.",
+    description:
+      "Crispy chicken fillet, cheese and house sauce in a toasted brioche bun with fries.",
     price: 330,
     image: burger,
     popular: true,
