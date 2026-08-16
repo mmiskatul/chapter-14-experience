@@ -77,21 +77,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Cafe CHAPTER 14 — Good Food. Great Moments." },
+      {
+        name: "description",
+        content:
+          "Discover Cafe CHAPTER 14 — delicious food, a welcoming atmosphere and memorable dining experiences in Dhaka, Bangladesh.",
+      },
+      { name: "author", content: "Cafe CHAPTER 14" },
+      {
+        property: "og:title",
+        content: "Cafe CHAPTER 14 — Good Food. Great Moments.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Discover Cafe CHAPTER 14 — delicious food, a welcoming atmosphere and memorable dining experiences in Dhaka, Bangladesh.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Cafe CHAPTER 14" },
+      {
+        name: "twitter:description",
+        content: "Good Food. Great Moments. Your Chapter.",
+      },
+      { name: "twitter:image", content: "/og-image.png" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,
